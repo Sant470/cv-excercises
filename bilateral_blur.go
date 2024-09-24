@@ -13,10 +13,6 @@ import (
 
 func main() {
 
-	// Gaussian blur is similar to average blurring, but instead of using simple mean,
-	// we are now using weighted mean, where neighborhood pixels that are closer to to the central pixel
-	// contribute more weight to the average.
-
 	img := gocv.IMRead("images/sunflower.jpg", gocv.IMReadColor)
 
 	hstack := gocv.NewMat()
